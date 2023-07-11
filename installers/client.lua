@@ -16,7 +16,7 @@ if not fs.exists("/basalt.lua") then
 end
 
 fs.makeDir("teleporter")
-local basalt = require("basalt")
+local basalt = require("/basalt")
 
 local main = basalt.createFrame()
     :setBackground(colors.black)
