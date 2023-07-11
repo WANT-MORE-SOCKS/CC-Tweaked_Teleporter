@@ -1,4 +1,4 @@
-# Ender pearl stasis chamber with remote control for CC: Tweaked.
+# 16 ender pearl stasis chambers with remote control using CC: Tweaked.
 
 ### Currently requires CC:Tweaked and Create
 
