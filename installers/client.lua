@@ -95,7 +95,7 @@ local phase2ProceedButton = sub[3]:addButton():setPosition(4, 15):setSize(20, 5)
     :setForeground(colors.white)
 
 phase2ProceedButton:onClick(function()
-    --add wget HERE
+    shell.run("wget https://github.com/WANT-MORE-SOCKS/CC-Tweaked_Teleporter/blob/399e742550bf79f02c53dc8ef296318181284713/client/teleUI.lua teleporter/teleUI.lua")
     openSubFrame(4)
 end)
 
