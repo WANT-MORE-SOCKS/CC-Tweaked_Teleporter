@@ -72,7 +72,7 @@ teleList:onSelect(function(self, event, item)
 	Selection = item.text
 	SelectionID = SelectionIDsTable[Selection]
 	showTeleID:setText("ID:"..SelectionID)
-	teleTitle:setText(Selection)
+	teleTitle:setText("Go to: "..Selection)
 	teleButton:setVisible(true)
 end)
 
@@ -85,7 +85,6 @@ teleList:onScroll(function()
 end)
 
 teleButton:onClick(function()
-	teleTitle:setText("Teleporting to "..SelectionID)
 	rednet.send(SelectionID, myTeleID, SelectionProtocol)
 end)
 	

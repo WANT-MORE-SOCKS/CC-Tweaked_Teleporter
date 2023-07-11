@@ -15,6 +15,7 @@ if not fs.exists("/basalt.lua") then
     end
 end
 
+if fs.exists("/teleporter") then fs.delete("/teleporter") end
 fs.makeDir("teleporter")
 local basalt = require("/basalt")
 
