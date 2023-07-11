@@ -21,7 +21,8 @@ if fs.exists("/teleporter") then
         shell.run("rm /teleporter")
         installThem()
     end
-end
+else installThem() end
+
 if fs.exists("/teleporter/settings") then
     print("Do you wish to overwrite pre-existing settings? [y/n]")
     if string.lower(read()) ~= "y" then
@@ -52,6 +53,5 @@ while true do
         print("failed answer: "..dimension)
     end
 end
-installThem()
 settings.save("teleporter/settings")
 print("Installation complete")
