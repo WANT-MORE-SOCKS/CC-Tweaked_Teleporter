@@ -3,7 +3,7 @@
 basalt = require("/basalt")
 peripheral.find("modem", rednet.open)
 
-settings.load("teleporter/settings")
+settings.load("/teleporter/settings")
 local myTeleID = settings.get("myTeleID", 0)
 
 --TODO: descriptions, co-ordinates, passwords, flavour text, teleporter cache and refresh

@@ -3,6 +3,7 @@
 --TODO: settings integration, passwords
 
 --IMPORTANT!!
+settings.load("/teleporter/settings")
 local hostName = settings.get("hostName")
 local dimension = settings.get("dimension")
 --IMPORTANT!!
