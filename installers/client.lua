@@ -9,7 +9,7 @@ if not fs.exists("/basalt.lua") then
     local answer = read()
     term.setTextColour(colors.white)
     if answer == "yes" or answer == "y" then
-        shell.run("wget run https://basalt.madefor.cc/install.lua release latest.lua")
+        shell.run("wget run https://basalt.madefor.cc/install.lua release /latest.lua")
     else
         error("Goodbye")
     end
