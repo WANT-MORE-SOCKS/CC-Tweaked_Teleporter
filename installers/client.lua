@@ -1,7 +1,7 @@
 --TELEPORTER CLIENT INSTALLER v1.0
 --REQUIRES BASALT FRAMEWORK
 
-if not fs.exists("basalt.lua") then
+if not fs.exists("/basalt.lua") then
     term.setTextColour(colors.red)
     print("This program requires the Basalt UI Framework.")
     term.setTextColour(colors.yellow)
@@ -95,8 +95,18 @@ local phase2ProceedButton = sub[3]:addButton():setPosition(4, 15):setSize(20, 5)
     :setForeground(colors.white)
 
 phase2ProceedButton:onClick(function()
-    shell.run("wget https://github.com/WANT-MORE-SOCKS/CC-Tweaked_Teleporter/blob/399e742550bf79f02c53dc8ef296318181284713/client/teleUI.lua teleporter/teleUI.lua")
+    shell.run("wget https://raw.githubusercontent.com/WANT-MORE-SOCKS/CC-Tweaked_Teleporter/master/client/teleUI.lua teleporter/teleUI.lua")
+    shell.run("wget https://raw.githubusercontent.com/WANT-MORE-SOCKS/CC-Tweaked_Teleporter/master/icons/icon.nfp teleporter/icon.nfp")
     openSubFrame(4)
+end)
+
+local exitButton = sub[4]:addButton():setPosition(4, 10):setSize(20, 5)
+    :setText("Exit")
+    :setBackground(colors.green)
+    :setForeground(colors.white)
+
+    exitButton:onClick(function()
+        error()
 end)
 
 basalt.autoUpdate()

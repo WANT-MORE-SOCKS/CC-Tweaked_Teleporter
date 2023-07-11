@@ -1,6 +1,6 @@
 --TELEPORTER UI v1.0
 
-basalt = require("basalt")
+basalt = require("/basalt")
 peripheral.find("modem", rednet.open)
 
 settings.load("teleporter/settings")
