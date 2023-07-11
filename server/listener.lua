@@ -5,6 +5,9 @@
 --IMPORTANT!!
 settings.load("/teleporter/settings")
 local hostName = settings.get("hostName")
+--"teleDimOver" is overworld 
+--"teleDimNeth" is nether 
+--"teleDimEnd"  is end
 local dimension = settings.get("dimension")
 --IMPORTANT!!
 peripheral.find("modem", rednet.open)

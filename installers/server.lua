@@ -20,13 +20,14 @@ if fs.exists("/teleporter") then
         settings.load("/teleporter/settings")
         shell.run("rm /teleporter")
         installThem()
+        settings.save("/teleporter/settings")
     end
 else installThem() end
 
 if fs.exists("/teleporter/settings") then
     print("Do you wish to overwrite pre-existing settings? [y/n]")
     if string.lower(read()) ~= "y" then
-        print("Installation complete")
+        print("Installation complete, please reboot.")
         error()
     end
 end
@@ -54,4 +55,4 @@ while true do
     end
 end
 settings.save("teleporter/settings")
-print("Installation complete")
+print("Installation complete, please reboot.")

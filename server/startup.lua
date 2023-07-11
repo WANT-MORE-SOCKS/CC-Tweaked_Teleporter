@@ -1,10 +1,10 @@
 term.setTextColor(colors.cyan)
 --TELEPORTER STARTUP v1.0
+term.clear()
 
 shell.openTab("/teleporter/listener")
 shell.openTab("/teleporter/teleporter")
 
-term.clear()
 term.setCursorPos(1, 2)
 print("    |''||''| '||''''|  '||'      '||''''| \n       ||     ||  .     ||        ||  .   \n       ||     ||''|     ||        ||''|   \n       ||     ||        ||        ||      \n      .||.   .||.....| .||.....| .||.....|\n      \n      '||'''|, .|''''|, '||'''|, |''||''| \n       ||   || ||    ||  ||   ||    ||    \n       ||...|' ||    ||  ||...|'    ||    \n       ||      ||    ||  || \\\\      ||    \n      .||      `|....|' .||  \\\\.   .||.   ")
 term.setTextColor(colors.gray)
