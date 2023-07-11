@@ -106,7 +106,7 @@ local exitButton = sub[4]:addButton():setPosition(4, 10):setSize(20, 5)
     :setForeground(colors.white)
 
     exitButton:onClick(function()
-        error()
+        basalt.stopUpdate()
 end)
 
 basalt.autoUpdate()
