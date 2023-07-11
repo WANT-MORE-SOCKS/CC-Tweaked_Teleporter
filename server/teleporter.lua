@@ -1,6 +1,6 @@
 --TELEPORTER CONTROLLER v2.0
 
-function resetOutput()
+local function resetOutput()
 --Bottom
 	redstone.setAnalogOutput("right", 0)
 --Top
