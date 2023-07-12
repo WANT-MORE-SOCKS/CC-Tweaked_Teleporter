@@ -97,7 +97,7 @@ local phase2ProceedButton = sub[3]:addButton():setPosition(4, 15):setSize(20, 5)
 
 phase2ProceedButton:onClick(function()
     shell.run("wget https://raw.githubusercontent.com/WANT-MORE-SOCKS/CC-Tweaked_Teleporter/master/client/teleUI.lua /teleporter/teleUI.lua")
-    shell.run("wget https://raw.githubusercontent.com/WANT-MORE-SOCKS/CC-Tweaked_Teleporter/master/icons/icon.nfp /teleporter/icon.nfp")
+    shell.run("wget https://raw.githubusercontent.com/WANT-MORE-SOCKS/CC-Tweaked_Teleporter/master/icons/icon.nfp /teleporter/teleUI.lua.nfp")
     openSubFrame(4)
 end)
 
