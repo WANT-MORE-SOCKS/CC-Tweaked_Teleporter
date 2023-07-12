@@ -32,7 +32,7 @@ local main = basalt.createFrame()
 	:setBackground(colors.lightGray)
 	:setForeground(colors.black)
 
-local bottomInfo = main:addFrame():setSize(26, 1):setPosition(1, 20)
+local bottomInfo = main:addFrame():setSize(26, 1):setPosition(1, "{parent.h - 1}")
 
 local showTeleID = bottomInfo:addLabel()
 	:setText("ID:?")
@@ -56,7 +56,7 @@ local dimension = main:addDropdown():setPosition(2, 11)
 	SelectionIDsTable = dimension:getValue().args[2]
 	SelectionProtocol = dimension:getValue().args[3]
 
-local teleButton = main:addButton():setSize(16, 3):setPosition(6, 17)
+local teleButton = main:addButton():setSize(16, 3):setPosition(6, "{parent.h - 5}")
 	:setVisible(false)
 	:setText("TELEPORT")
 	:setBackground(colors.green)
